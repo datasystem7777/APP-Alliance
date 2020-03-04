@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Fragmentos.Observacao">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/vEdit_obs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_margin="8dp"
+            android:minLines="4"
+            android:maxLines="6"/>
+        <Button
+            android:id="@+id/vBtn_Salvar"
+            android:background="@color/color3"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="Salvar"/>
+        <Button
+            android:id="@+id/vBtn_Cancelar"
+            android:textColor="@android:color/white"
+            android:background="@color/color1"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"/>
+    </LinearLayout>
+</FrameLayout>

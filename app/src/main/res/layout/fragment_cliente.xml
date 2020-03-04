@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.Cliente">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:id="@+id/vLinear_cabecalho"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:text="CNPJ"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <EditText
+                                        android:id="@+id/vEdit_cnpj"
+                                        android:inputType="text"
+                                        android:maxLines="1"
+                                        android:maxLength="18"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"/>
+                                    <Button
+                                        android:id="@+id/vBtn_cnpj"
+                                        android:layout_width="48dp"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/ic_search"
+                                        android:backgroundTint="@color/color2"/>
+                                </LinearLayout>
+
+                                <TextView
+                                    android:text="Nome Fantasia"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_nome_fantasia"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:maxLength="255"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:text="Razão Social"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_razao_social"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:maxLength="255"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:text="Inscrição Estadual"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_inscricao_estadual"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:maxLength="30"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:text="Transportadora"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="bottom"
+                                        android:layout_height="wrap_content"/>
+                                    <Button
+                                        android:id="@+id/vBtn_transportadora"
+                                        android:layout_width="48dp"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/ic_add"
+                                        android:backgroundTint="@color/color2"/>
+                                </LinearLayout>
+
+                                <Spinner
+                                    android:id="@+id/vSpinner_transportadora"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_transportadora"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:maxLength="255"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"/>
+
+
+                                <TextView
+                                    android:text="Nome Contato"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_nome_contato"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:maxLength="50"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:text="Nome Comprador"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_nome_comprador"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:maxLength="50"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:text="Email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_email"
+                                    android:inputType="textEmailAddress"
+                                    android:maxLines="1"
+                                    android:maxLength="255"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:text="DDD"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_ddd"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:maxLength="2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:text="Telefone 1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_telefone1"
+                                    android:inputType="phone"
+                                    android:maxLines="1"
+                                    android:maxLength="50"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:text="Telefone 2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_telefone2"
+                                    android:inputType="phone"
+                                    android:maxLines="1"
+                                    android:maxLength="50"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+
+                                <TextView
+                                    android:text="Observação"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_observacao"
+                                    android:lines="3"
+                                    android:minLines="3"
+                                    android:maxLength="255"
+                                    android:inputType="text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+
+                                <!--TextView
+                                    android:text="Transportadora"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_transportadora"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/-->
+
+                                <TextView
+                                    android:text="CEP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <EditText
+                                        android:id="@+id/vEdit_cep"
+                                        android:inputType="textPostalAddress"
+                                        android:maxLength="15"
+                                        android:maxLines="1"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"/>
+                                    <Button
+                                        android:id="@+id/vBtn_cep"
+                                        android:layout_width="48dp"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/ic_search"
+                                        android:backgroundTint="@color/color2"/>
+                                </LinearLayout>
+
+                                <TextView
+                                    android:text="Logradouro"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_endereco"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:maxLength="255"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:text="Bairro"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_bairro"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:maxLength="255"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:text="Cidade"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_cidade"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:maxLength="255"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:text="UF"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+                                    android:id="@+id/vEdit_uf"
+                                    android:maxLength="2"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </ScrollView>
+                <CheckBox
+                    android:id="@+id/vCheck_cliente"
+                    android:checked="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gerar Pedido ao Cadastrar"/>
+                <Button
+                    android:id="@+id/vBtn_confirmar"
+                    android:layout_margin="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:background="@color/color1"
+                    android:text="CADASTRAR CLIENTE"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
